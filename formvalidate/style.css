@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css");
+
+.itemss{
+    width: 400px;
+}
+input{
+    width: 300px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    padding: 0 10px;
+    border: 2px solid #ddd;
+}
+label{
+    padding-bottom: 5px;
+}
+.input-parent{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    flex-direction: column;
+}
+.bi{
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+.bi-check-circle-fill{
+    color: green;
+    visibility: hidden;
+}
+.bi-x-circle-fill{
+    color: red;
+    visibility: hidden;
+}
+
+.input-parent.error .bi-x-circle-fill{
+    visibility: visible ;
+}
+.input-parent.succes .bi-check-circle-fill{
+    visibility: visible ;
+}
+small {
+    color: red;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+}
+.input-parent.error input{
+    border-color: red ;
+}
+.input-parent.succes input{
+    border-color: green ;
+}
+.input-parent.succes small{
+    display: none ;
+}

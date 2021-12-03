@@ -1,0 +1,41 @@
+#input{
+    width: 400px;
+    height: 35px;
+    margin: 10px;
+}
+.list-item{
+    background-color: coral;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    font-weight: bolder;
+    padding: 15px 45px;
+    min-width: 837px;
+}
+.list-item:hover .close-button{
+    left: 0;
+}
+
+.list-item:nth-child(2n){
+    background-color: rgb(132, 0, 255);
+    min-width: 837px;
+}
+
+.list-ok{
+    text-decoration: line-through !important;
+    
+}
+.wrapper{
+    overflow: hidden;
+}
+.close-button{
+    transition: all .4s linear;
+    cursor: pointer;
+    padding:15px 15px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    bottom: 0;
+    z-index: 99;
+}

@@ -1,0 +1,33 @@
+form input{
+    outline: none;
+    border:none;
+    border-bottom: 2px solid rgb(143, 143, 143);
+    transition: all .4s linear;
+
+}
+input::placeholder{
+    text-align: center;
+}
+form input:focus{
+    border-bottom: 2px solid #000;
+}
+#temp {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bolder;
+}
+#city{
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;
+}
+#stat{
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+}
+#min-max{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
